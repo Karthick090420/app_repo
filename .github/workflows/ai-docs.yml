@@ -1,0 +1,11 @@
+name: AI Documentation Trigger
+
+on:
+  push:
+   branches:
+    - main
+    - master
+
+jobs:
+    generate-ai-docs:
+                   uses: Karthick090420/central_repo/.github/workflows/doc-generator.yml@main
